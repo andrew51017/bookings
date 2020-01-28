@@ -69,12 +69,6 @@ class Availability
 		$this->_start = $baseRule->start;
 
 		$this->_group = rtrim(Frequency::toUnit($baseRule->frequency), 's');
-
-		if ($baseRule->until && $baseRule->repeats === RecursionRule::REPEATS_UNTIL)
-			$this->_end = $baseRule->until;
-
-		if ($baseRule->count && $baseRule->count < 1000 && $baseRule->repeats === RecursionRule::REPEATS_COUNT)
-			$this->_count = $baseRule->count;
 	}
 
 	// Methods
@@ -341,5 +335,4 @@ class Availability
 			->modify($mod)
 			->format(\DateTime::W3C);
 	}
-
 }

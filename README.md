@@ -4,6 +4,8 @@ An advanced booking plugin for [Craft CMS](https://craftcms.com) and [Craft Comm
 
 **Warning:** This plugin is a _work in progress_ and therefore _should not be used in a production environment_ (or any environment for that matter).
 
+This fork re-works the Availability logic to return details on all the slots defined by the base rule and the exception rules. This better suits our use case.
+
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-rc17 or later.
